@@ -7,6 +7,7 @@
 // Изменил что-то в проекте
 
 #import "AppDelegate.h"
+#import "KKActionSheet.h"
 
 @interface AppDelegate ()
 
@@ -15,10 +16,23 @@
 @implementation AppDelegate
 
 
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+        KKActionSheet *sheet = [[KKActionSheet alloc] initWithTitle:@"Test actionsheet" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Button index 1",@"Button index 2", nil];
+        [sheet setTitlesTextColor:[UIColor blackColor]];
+        [sheet setTextColors:@[[UIColor redColor], [UIColor blueColor]] forButtonIndexes:@[@(0),@(1)]];
+        [sheet showInView:self.window.rootViewController.view];
+    
+    // You can also use self.view if you don't have a sender
     return YES;
 }
+
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

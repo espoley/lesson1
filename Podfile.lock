@@ -1,0 +1,10 @@
+PODS:
+  - KKActionSheet (0.2)
+
+DEPENDENCIES:
+  - KKActionSheet (~> 0.2)
+
+SPEC CHECKSUMS:
+  KKActionSheet: 42be427a3e6edadb1787da8bf70bfd86ef3d6a13
+
+COCOAPODS: 0.39.0
