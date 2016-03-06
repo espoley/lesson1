@@ -4,7 +4,7 @@
 //
 //  Created by Espo on 06/03/16.
 //  Copyright © 2016 Evgeny Poley. All rights reserved.
-//
+// Изменил что-то в проекте
 
 #import "AppDelegate.h"
 
